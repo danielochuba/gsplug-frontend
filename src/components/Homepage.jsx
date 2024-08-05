@@ -1,8 +1,16 @@
-// src/components/Homepage.js
-
 import React from 'react';
 import UNN from '../assets/unn.jpeg';
 import ESUT from '../assets/esut.jpeg';
+import IMT from '../assets/imt.png';
+import AMADI from '../assets/amadi.jpeg';
+import BORI from '../assets/bori.jpeg';
+import FUTO from '../assets/futo.jpeg';
+import IMOPOLY from '../assets/imopoly.jpeg';
+import IMSU from '../assets/imsu.jpeg';
+import LASU from '../assets/lasu.jpeg';
+import NEKEDE from '../assets/nekede.png';
+import UNIPORT from '../assets/uniport.jpeg';
+import YABATECH from '../assets/yabatech.jpeg';
 
 const Homepage = () => {
   return (
@@ -48,6 +56,59 @@ const Homepage = () => {
               <h3 className="text-xl font-bold mb-2">UNN</h3>
               <p>University of Nigeria, Nsukka</p>
             </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+              <img src={IMT} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">IMT</h3>
+              <p>Institute of Management and Technology</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={AMADI} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">AMADI</h3>
+                <p>Chukwuemeka Odumegwu Ojukwu University</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={BORI} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">BORI</h3>
+                <p>Rivers State University</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={FUTO} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">FUTO</h3>
+                <p>Federal University of Technology, Owerri</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={IMOPOLY} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">IMOPOLY</h3>
+                <p>Imo State Polytechnic</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={IMSU} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">IMSU</h3>
+                <p>Imo State University</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={LASU} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">LASU</h3>
+                <p>Lagos State University</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={NEKEDE} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">NEKEDE</h3>
+                <p>Federal Polytechnic Nekede</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={UNIPORT} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">UNIPORT</h3>
+                <p>University of Port Harcourt</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md justify-center">
+                <img src={YABATECH} alt="School Logo" className="w-24 h-24 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">YABATECH</h3>
+                <p>Yaba College of Technology</p>
+            </div>
+
+
+
             {/* Add more school cards here */}
           </div>
         </div>
