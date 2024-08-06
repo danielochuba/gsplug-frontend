@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import schoolsData from '../data/schoolsData';
 
-
 function Schools() {
 
     return (
@@ -14,7 +13,6 @@ function Schools() {
                     <p>{school.name}</p>
                     <button className="bg-blue-600 mt-3 text-white px-4 py-2 rounded-lg hover:bg-blue-700">View Details</button>
                 </Link>
-                
             ))}</>
     )
 }
