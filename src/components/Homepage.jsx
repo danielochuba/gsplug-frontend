@@ -186,7 +186,7 @@ const Homepage = () => {
                         <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
                             <img src={ADMISSION} alt="Admission" className='m-auto' />
                             <h3 className="text-xl font-bold mb-2">Admission Assistance</h3>
-                            <p>Get help with your school admission process.</p>
+                            <p>Get help with your school admission guidelines.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
                             <img src={PAST} alt="Past questions" className='m-auto' />
