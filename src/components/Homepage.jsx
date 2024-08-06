@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import { VscChromeClose } from "react-icons/vsc";
 import Services from './Services';
@@ -37,11 +38,11 @@ const Homepage = () => {
                                     )}
                                 </button>
                                 <ul className={`flex flex-col gap-6 text-2xl mt-10 py-10`}>
-                                    <li><a href="#home" onClick={toggleMenu} className="block hover:underline p-2">Home</a></li>
+                                    <li><Link to="/" onClick={toggleMenu} className="block hover:underline p-2">Home</Link></li>
                                     <li><a href="#schools" onClick={toggleMenu} className="block hover:underline p-2">Schools</a></li>
                                     <li><a href="#services" onClick={toggleMenu} className="block hover:underline p-2">Services</a></li>
                                     <li><a href="#consultants" onClick={toggleMenu} className="block hover:underline p-2">Consultants</a></li>
-                                    <li><a href="#contact" onClick={toggleMenu} className="block hover:underline p-2">Contact</a></li>
+                                    <li><Link to="/contact" onClick={toggleMenu} className="block hover:underline p-2">Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -53,7 +54,7 @@ const Homepage = () => {
                                 <li><a href="#schools" className="hover:underline">Schools</a></li>
                                 <li><a href="#services" className="hover:underline">Services</a></li>
                                 <li><a href="#consultants" className="hover:underline">Consultants</a></li>
-                                <li><a href="#contact" className="hover:underline">Contact</a></li>
+                                <li><Link to="/contact" className="hover:underline">Contact</Link></li>
                             </ul>
                         </div>
                         
