@@ -39,34 +39,36 @@ const Homepage = () => {
                 <div className="container mx-auto flex justify-between items-center">
                     <h1 className="text-2xl font-bold">GS-Plug</h1>
                     <nav className=''>
-                        <div className="md:hidden">
-                            <button onClick={toggleMenu}>
-                                {isMenuOpen ? (
-                                    <></>
-                                ) : (
-                                    <FiMenu className='text-2xl' />
-                                )}
-                            </button>
-                        </div>
-                        <div className={`md:flex space-x-4 ${isMenuOpen ? 'block ' : 'hidden'} absolute top-0 right-0 top- bg-sky-700 w-1/2 `}>
-                            <button onClick={toggleMenu}>
-                                {isMenuOpen ? (
-                                    <VscChromeClose className='absolute right-3 text-2xl' />
-                                ) : (
-                                    <></>
-                                )}
-                            </button>
-                            <ul className={`flex flex-col gap-6 text-2xl mt-10 py-10`}>
-                                <li><a href="#home" onClick={toggleMenu} className="block hover:underline p-2">Home</a></li>
-                                <li><a href="#schools" onClick={toggleMenu} className="block hover:underline p-2">Schools</a></li>
-                                <li><a href="#services" onClick={toggleMenu} className="block hover:underline p-2">Services</a></li>
-                                <li><a href="#consultants" onClick={toggleMenu} className="block hover:underline p-2">Consultants</a></li>
-                                <li><a href="#contact" onClick={toggleMenu} className="block hover:underline p-2">Contact</a></li>
-                            </ul>
+                        <div className='lg:hidden'>
+                            <div className="md:hidden">
+                                <button onClick={toggleMenu}>
+                                    {isMenuOpen ? (
+                                        <></>
+                                    ) : (
+                                        <FiMenu className='text-2xl' />
+                                    )}
+                                </button>
+                            </div>
+                            <div className={` space-x-4 ${isMenuOpen ? 'block ' : 'hidden'} absolute top-0 right-0 top- bg-sky-700 w-1/2 `}>
+                                <button onClick={toggleMenu}>
+                                    {isMenuOpen ? (
+                                        <VscChromeClose className='absolute right-3 text-2xl' />
+                                    ) : (
+                                        <></>
+                                    )}
+                                </button>
+                                <ul className={`flex flex-col gap-6 text-2xl mt-10 py-10`}>
+                                    <li><a href="#home" onClick={toggleMenu} className="block hover:underline p-2">Home</a></li>
+                                    <li><a href="#schools" onClick={toggleMenu} className="block hover:underline p-2">Schools</a></li>
+                                    <li><a href="#services" onClick={toggleMenu} className="block hover:underline p-2">Services</a></li>
+                                    <li><a href="#consultants" onClick={toggleMenu} className="block hover:underline p-2">Consultants</a></li>
+                                    <li><a href="#contact" onClick={toggleMenu} className="block hover:underline p-2">Contact</a></li>
+                                </ul>
+                            </div>
                         </div>
 
-                        {/* Header */}
-                        {/* <nav>
+
+                        <div className='hidden md:block lg:block'>
                             <ul className={`flex space-x-4 ${isMenuOpen ? 'hidden' : 'block'} `}>
                                 <li><a href="#home" className="hover:underline">Home</a></li>
                                 <li><a href="#schools" className="hover:underline">Schools</a></li>
@@ -74,8 +76,8 @@ const Homepage = () => {
                                 <li><a href="#consultants" className="hover:underline">Consultants</a></li>
                                 <li><a href="#contact" className="hover:underline">Contact</a></li>
                             </ul>
-                        </nav> */}
-
+                        </div>
+                        
                     </nav>
                 </div>
             </header>
@@ -186,8 +188,8 @@ const Homepage = () => {
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
                             <img src={ADMISSION} alt="Admission" className='m-auto' />
-                            <h3 className="text-xl font-bold mb-2">Admission Assistance</h3>
-                            <p>Get help with your school admission guidelines.</p>
+                            <h3 className="text-xl font-bold mb-2">Admission Guilines</h3>
+                            <p>Get help with your school admission through a well curated guidelines.</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
                             <img src={PAST} alt="Past questions" className='m-auto' />
