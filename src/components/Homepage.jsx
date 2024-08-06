@@ -23,6 +23,7 @@ import PAST from '../assets/images/past.png'
 import UPLOAD from '../assets/images/olevels.jpeg';
 import CONSULT from '../assets/images/consultance.jpeg';
 import POSTUTME from '../assets/images/postutme.jpeg';
+import PERSONA from '../assets/images/persona.png'
 
 const Homepage = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ const Homepage = () => {
                                 {isMenuOpen ? (
                                     <></>
                                 ) : (
-                                    <FiMenu className='text-2xl'/>
+                                    <FiMenu className='text-2xl' />
                                 )}
                             </button>
                         </div>
@@ -170,8 +171,8 @@ const Homepage = () => {
                         {/* Example of Service Cards */}
                         <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
                             <img src={SCRATCH} alt="Scratch card" className='m-auto' />
-                            <h3 className="text-xl font-bold mb-2">WAEC Scratch Cards</h3>
-                            <p>Purchase your WAEC scratch cards here.</p>
+                            <h3 className="text-xl font-bold mb-2">Scratch Card Purchase</h3>
+                            <p>Purchase Waec, NECO, nabteb scratch cards...</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
                             <img src={UPLOAD} alt="Post-O-levels" className='m-auto' />
@@ -214,6 +215,12 @@ const Homepage = () => {
                             <img src={CHAT} alt="Chat" className='m-auto' />
                             <h3 className="text-xl font-bold mb-2">Quick Chat</h3>
                             <p>Chat with our consultants for quick assistance.</p>
+                        </div>
+
+                        <div className="bg-white p-6 rounded-lg shadow-md justify-center text-center">
+                            <img src={PERSONA} alt="Post-UTME" className='m-auto' />
+                            <h3 className="text-xl font-bold mb-2">Documents Processing</h3>
+                            <p>Get your documents processed easily, quickly and securely. Affidavit, LGA Testimonial, FSLC, Birth Certificate, Church Attestation Letter, Medical Reports </p>
                         </div>
                     </div>
                 </div>
