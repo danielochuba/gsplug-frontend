@@ -1,7 +1,8 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import schoolsData from '../data/schoolsData'; // Adjust this import to match your data file
-
+import Header from './Header';
+import { GoArrowLeft } from "react-icons/go";
 
 const SchoolDetails = () => {
   const { id } = useParams();
@@ -12,7 +13,10 @@ const SchoolDetails = () => {
   }
 
   return (
-    <div className="container mx-auto p-8 bg-white rounded-lg shadow-lg">
+    <>
+    <Header />
+    <Link to="/" className="fixed top-20 left-10 bg-blue-600 text-white p-2 rounded-full"><GoArrowLeft className="text-2xl" /></Link>
+    <div className="container mx-auto p-8 bg-white rounded-lg shadow-lg pt-40">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-extrabold text-blue-600 mb-4">{school.name}</h2>
         <img src={school.logo} alt={`${school.name} logo`} className="w-32 h-32 mx-auto mb-4" />
@@ -24,6 +28,7 @@ const SchoolDetails = () => {
         <p className="text-xl font-semibold text-gray-700">Programs: <span className="font-normal">{school.programs.join(', ')}</span></p>
       </div>
     </div>
+    </>
   );
 };
 
