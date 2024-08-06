@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Contact from './components/Contact';
+import SchoolDetails from './components/SchoolDetails';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
-  }
+  },
+  {
+    path: "/school/:id",
+    element: <SchoolDetails />,
+  },
 ]);
 
 
