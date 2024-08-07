@@ -1,5 +1,3 @@
-// src/pages/ContactUs.jsx
-
 import React from 'react';
 import Header from './Header';
 
